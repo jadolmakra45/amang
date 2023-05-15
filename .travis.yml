@@ -1,14 +1,4 @@
-#
-# Run repoman via travis
-# See https://github.com/mrueg/repoman-travis
-#
-language: python
-python:
-    - "3.10.6"
-env:
-    - PORTAGE_VER="3.0.13"
-before_install:
-    - sudo apt-get -qq update
-    - pip install lxml pyyaml
-before_script:
-    - lscpu
+language: ruby
+rvm:
+ - 2.2
+ - jruby
